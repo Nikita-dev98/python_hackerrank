@@ -1,0 +1,13 @@
+n=int(input())
+name_nos = [input().split() for _ in range(n)]
+phbook = {k:v for k,v in name_nos}
+
+while True:
+    try:
+        name = input()
+        if name in phbook:
+            print('%s=%s' %(name, phbook[name]))
+        else:
+            print("Not found")
+    except EOFError:
+        break
