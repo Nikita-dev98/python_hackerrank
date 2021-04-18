@@ -1,0 +1,9 @@
+n = input()
+n1 = input().split()
+m = input()
+m1 = input().split()
+
+x=set(n1)
+y= set(m1)
+
+print(len(x.intersection(y)))
