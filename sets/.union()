@@ -1,0 +1,7 @@
+n = input()
+n1 = set(input().split())
+m = input()
+m2 = set(input().split())
+
+x,y = set(n1), set(m2)
+print(len(x.union(y)))
